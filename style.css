@@ -1,0 +1,477 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #ffffff;
+}
+
+.frame {
+    height: 110vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-image: linear-gradient(-10deg, #000000 60%, #FFA901 40%);
+}
+
+.header {
+    display: flex;
+    justify-content: start;
+    /* Вирівнює зображення по центру горизонтально */
+    align-items: center;
+    /* Вирівнює зображення по центру вертикально */
+    background-color: transparent;
+    height: 100px;
+    width: 900px;
+    margin: 46px auto;
+    margin-top: 55px;
+}
+
+header {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 120px;
+    border-radius: 20%;
+    margin: 10px 10px;
+}
+
+.header__text2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 260px;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: 'Lexend', sans-serif;
+
+}
+
+.header__text2 h2 {
+    padding: 18px;
+    cursor: pointer;
+}
+
+.all {
+    flex-direction: column;
+}
+
+.main p {
+    font-size: 36px;
+    margin-left: 14px;
+    margin-bottom: 0px;
+    animation-duration: 1.5s;
+    animation-name: text;
+}
+
+.main2 p {
+    font-size: 20px;
+    margin-left: 14px;
+    padding-top: 0px;
+    animation-duration: 1s;
+    animation-name: text1;
+}
+
+.main3 {
+    width: 260px;
+    height: 30px;
+    background-color: transparent(255, 255, 255);
+    border-radius: 20px;
+    border: 3px solid white;
+    margin-top: 140px;
+    margin-left: 14px;
+    flex-direction: row;
+    display: flex;
+    /* Встановлюємо flex для розміщення елементів в ряд */
+    align-items: center;
+    animation: search 1s forwards
+}
+
+.main3 img {
+    height: 24px;
+    margin: 3px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main3 p {
+    color: white;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main3 input {
+    background-color: transparent;
+    color: white;
+}
+
+.input-field {
+    width: 200px;
+    height: 25px;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 13px;
+    color: white;
+    display: flex;
+    border-color: transparent;
+    border: none;
+    /* Видаляємо рамку */
+    outline: none;
+}
+
+.main4 p {
+    color: rgb(184, 184, 184);
+    margin-left: 17px;
+    margin-top: 30px;
+}
+
+.kagecorii {
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    /* Тут не потрібно значення кольору */
+    border-radius: 20px;
+    border: 2px solid rgb(184, 184, 184);
+    margin-top: 15px;
+    margin-left: 14px;
+    display: flex;
+    /* Встановлюємо flex для розміщення елементів в ряд */
+    align-items: center;
+    justify-content: center;
+    /* Вирівнюємо текст по центру по горизонталі */
+    cursor: pointer;
+    /* Змінюємо курсор при наведенні на кнопку */
+    transition: 0.3s;
+    color: white;
+}
+
+/* Опціональні стилі для вигляду кнопки при наведенні */
+.kagecorii:hover {
+    background-color: rgb(184, 184, 184);
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    display: flex;
+    /* Встановлюємо flex для контейнера */
+}
+
+.kagecorii1 {
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    /* Тут не потрібно значення кольору */
+    border-radius: 20px;
+    border: 2px solid rgb(184, 184, 184);
+    margin-top: 15px;
+    margin-left: 30px;
+    display: flex;
+    /* Встановлюємо flex для розміщення елементів в ряд */
+    align-items: center;
+    justify-content: center;
+    /* Вирівнюємо текст по центру по горизонталі */
+    cursor: pointer;
+    /* Змінюємо курсор при наведенні на кнопку */
+    transition: 0.3s;
+    color: white;
+}
+
+.kagecorii1:hover {
+    background-color: rgb(184, 184, 184);
+    color: rgb(0, 0, 0);
+}
+
+.card img {
+    height: 300px;
+    margin-top: 40px;
+    transition: 0.3s;
+    margin-left: 7px;
+}
+
+.card img:hover {
+    /* transform: translateY(-10px) */
+    transform: scale(1.1);
+}
+
+@keyframes text {
+    from {
+        font-size: 36px;
+        margin-left: -100px;
+        margin-bottom: 0px;
+        opacity: 0;
+    }
+
+    to {
+        font-size: 36px;
+        margin-left: 14px;
+        margin-bottom: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes text1 {
+    from {
+        font-size: 20px;
+        margin-left: -100px;
+        margin-bottom: 0px;
+        opacity: 0;
+    }
+
+    to {
+        font-size: 20px;
+        margin-left: 14px;
+        margin-bottom: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes search {
+    from {
+        width: 260px;
+        height: 30px;
+        background-color: transparent(255, 255, 255);
+        border-radius: 20px;
+        border: 3px solid white;
+        margin-top: 140px;
+        margin-left: 14px;
+        flex-direction: row;
+        display: flex;
+        /* Встановлюємо flex для розміщення елементів в ряд */
+        align-items: center;
+        transform: scale(1.2);
+    }
+
+    to {
+        width: 260px;
+        height: 30px;
+        background-color: transparent(255, 255, 255);
+        border-radius: 20px;
+        border: 3px solid white;
+        margin-top: 140px;
+        margin-left: 14px;
+        flex-direction: row;
+        display: flex;
+        /* Встановлюємо flex для розміщення елементів в ряд */
+        align-items: center;
+    }
+}
+
+@keyframes search1 {
+    from {
+        width: 260px;
+        height: 30px;
+        background-color: transparent(255, 255, 255);
+        border-radius: 20px;
+        border: 3px solid white;
+        margin-top: 140px;
+        margin-left: 14px;
+        flex-direction: row;
+        display: flex;
+        /* Встановлюємо flex для розміщення елементів в ряд */
+        align-items: center;
+    }
+
+    to {
+        width: 260px;
+        height: 30px;
+        background-color: transparent(255, 255, 255);
+        border-radius: 20px;
+        border: 3px solid white;
+        margin-top: 140px;
+        margin-left: 14px;
+        flex-direction: row;
+        display: flex;
+        /* Встановлюємо flex для розміщення елементів в ряд */
+        align-items: center;
+        transform: scale(1.2);
+    }
+}
+
+.card{
+    width: 232px;
+    height: 344px;
+    background: linear-gradient(to top right, #CD30AA, #5FD0EC);
+    border-radius: 29px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+.card .header_card{
+    display: flex;
+    margin-left: 28px;
+}
+.card .circle1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    margin-top: 14px;
+    margin-right: 5px;
+}
+.header_card p{
+    padding-top: 2px;
+}
+.card .circle2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    margin-top: 14px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.card p{
+    color: white;
+    font-weight: 550;
+    height: 20px;
+    margin: 0;
+    margin-top: 14px;
+}
+.card .photo img{
+    width: 154px;
+    height: 149px;
+    border-radius: 19px;
+    border: 1px solid #4691A4;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card .photo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 170px;
+}
+.card .main_text{
+    margin-left: 38px;
+}
+
+.card .main_text p{
+    color: white;
+    font-size: 20px;
+    margin-top: 13px;
+}
+.card .main_text .m_t2{
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.category .category1{
+    width: 10px;
+    height: 10px;
+    background-color: #52FF00;
+    margin-top: 20px;
+    border-radius: 50%;
+    margin-left: 38px;
+}
+.category .category2{
+    width: 10px;
+    height: 10px;
+    background-color: #FFC700;
+    margin-top: 20px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.category{
+    display: flex;
+}
+.category p{
+    margin-left: 5px;
+    font-weight: 550;
+}
+
+.price{
+    display: flex;
+}
+.price .money{
+    color: white;
+    font-weight: 550;
+    margin-left: 36px;
+    margin-top: 5px;
+}
+
+.price .arrow{
+    content: "\2192";
+    color: white;
+    font-size: 45px;
+    height: 30px;
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    transform: translateY(-5px);
+}
+.price .arrow:hover{
+    transform: scale(1.1);
+}
+.price .arrow a{
+    text-decoration: none;
+    color: white;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.cards2{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    display: none;
+}
+
+.frame1{
+    width: 100%;
+    height: 100vh;
+}
+
+.arrow-next img{
+    width: 30px;
+    transform: translateY(210px);
+    
+}
+.arrow-next{
+    transform: translateX(400px);
+    cursor: pointer;
+}
+.arrow-next1 img{
+    width: 30px;
+    transform: translateY(210px);
+    
+}
+.arrow-next1{
+    transform: translateX(-570px);
+    cursor: pointer;
+    display: none;
+}
+@keyframes anima{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+@keyframes anima1{
+    from{
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(1);
+    }
+}
